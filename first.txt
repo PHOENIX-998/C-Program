@@ -1,0 +1,37 @@
+#!/bin/bash
+echo "enter the number:"
+read num
+original_num=$num
+i=$num
+n=0
+ad=0
+
+while [ $i -gt 0 ]
+do
+        i=$((i / 10))
+        ((n++))
+done
+
+a=$original_num
+while [ $a -gt 0 ]
+do
+        t=$((a % 10))
+        a=$((a / 10))
+        k=1
+	  j=1
+
+        while [ $j -le $n ]
+        do
+                k=$((k * t))
+			((j++))
+        done
+
+        ad=$((ad + k))
+done
+
+if [ $ad -eq $original_num ]
+then
+        echo "The number $original_num is armstrong number"
+else
+        echo "The number is $original_num is not an armstrong number"
+fi
