@@ -1,0 +1,22 @@
+CREATE TABLE user (
+	user_id VARCHAR(5) NOT NULL , 
+	password VARCHAR(10) NOT NULL , 
+	u_fname TEXT NOT NULL , 
+	u_mname TEXT NOT NULL , 
+	u_lname TEXT NOT NULL , 
+	u_streetno VARCHAR(10) NOT NULL , 
+	u_streetname TEXT NOT NULL , 
+	u_locality TEXT NOT NULL , 
+	u_postoffice TEXT NOT NULL , 
+	u_pincode INT NOT NULL , 
+	u_district TEXT NOT NULL , 
+	u_state TEXT NOT NULL , 
+	u_phone VARCHAR(11) NOT NULL , 
+	u_email VARCHAR(50) NOT NULL , 
+	u_dob DATE NOT NULL , 
+	u_licenseno VARCHAR(10) NOT NULL , 
+	PRIMARY KEY (user_id(5))
+);
+
+INSERT INTO user (user_id, password, u_fname, u_mname, u_lname, u_streetno, u_streetname, u_locality, u_postoffice, u_pincode, u_district, u_state, u_phone, u_email, u_dob, u_licenseno) 
+			VALUES ('I2296', 'password', 'Apurba', 'Kumar', 'Kole', '32/1', 'Bellious Road', 'Kadamtala', 'Kadamtala', '711104', 'Howrah', 'West Bengal', '9876543210', 'somthing@gmail.com', '2014-11-27', 'MALO88');
